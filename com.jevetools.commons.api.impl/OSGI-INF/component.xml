@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="require" enabled="true" immediate="true" name="com.jevetools.commons.api.CommonsService">
+   <implementation class="com.jevetools.commons.api.service.impl.CommonsServiceImpl"/>
+   <service>
+      <provide interface="com.jevetools.commons.api.service.CommonsService"/>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+   </service>
+   <reference bind="bindLogService" cardinality="1..1" interface="org.osgi.service.log.LogService" name="LogService" policy="dynamic" unbind="unbindLogService" />
+   <properties entry="OSGI-INF/component.properties"/>
+</scr:component>

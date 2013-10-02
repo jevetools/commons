@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright (c) 2013, jEVETools
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the author nor the names of the contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+It is the responsibility of all users of this code and developers of derived
+works to ensure that their use and activities comply with all laws as well as
+the EVE-Online End-User License Agreement and Terms of Service.
+
+ -->
+<?pde version="3.5"?>
+<product name="com.jevetools.commons.product" uid="com.jevetools.commons.product" version="0.0.1.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog -console</programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <launcher name="jevetools">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <features>
+      <feature id="com.jevetools.commons.product.feature" version="0.0.0"/>
+   </features>
+
+  <configurations>
+      <plugin id="ch.qos.logback.classic" autoStart="true" startLevel="2" />
+      <plugin id="ch.qos.logback.core" autoStart="true" startLevel="2" />
+      <plugin id="ch.qos.logback.slf4j" autoStart="true" startLevel="2" />
+      <plugin id="com.sun.el" autoStart="true" startLevel="4" />
+      <plugin id="javax.el" autoStart="true" startLevel="4" />
+      <plugin id="javax.servlet" autoStart="true" startLevel="4" />
+      <plugin id="javax.servlet.jsp" autoStart="true" startLevel="4" />
+      <plugin id="javax.xml" autoStart="true" startLevel="4" />
+      <plugin id="org.apache.commons.codec" autoStart="false" startLevel="4" />
+      <plugin id="org.apache.httpcomponents.httpcore" autoStart="false" startLevel="4" />
+      <plugin id="org.apache.httpcomponents.httpclient" autoStart="false" startLevel="4" />
+      <plugin id="org.apache.commons.logging" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.core.jobs" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.filetransfer" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.identity" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.provider.filetransfer" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient4.ssl" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.ecf.ssl" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.cm" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.concurrent" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.frameworkadmin" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.frameworkadmin.equinox" autoStart="true" startLevel="3" />
+      <plugin id="org.eclipse.equinox.http.jetty" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.http.registry" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.http.servlet" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.io" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.ip" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.log" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.metatype" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.artifact.repository" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.console" autoStart="true" startLevel="3" />
+      <plugin id="org.eclipse.equinox.p2.core" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.director" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.engine" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.garbagecollector" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.jarprocessor" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.metadata" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.metadata.repository" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.operations" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.ql" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.repository" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.touchpoint.eclipse" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.touchpoint.natives" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.p2.transport.ecf" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.preferences" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.registry" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="false" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator.manipulator" autoStart="true" startLevel="3" />
+      <plugin id="org.eclipse.equinox.useradmin" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.util" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.continuation" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.http" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.io" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.security" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.server" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.servlet" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.jetty.util" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
+      <plugin id="org.eclipse.osgi.services" autoStart="true" startLevel="4" />
+      <plugin id="org.sat4j.core" autoStart="false" startLevel="4" />
+      <plugin id="org.sat4j.pb" autoStart="false" startLevel="4" />
+      <plugin id="org.slf4j.api" autoStart="true" startLevel="2" />
+      <plugin id="com.jevetools.commons.logging" autoStart="true" startLevel="4" />
+      <plugin id="com.jevetools.commons.api" autoStart="true" startLevel="5" />
+      <plugin id="com.jevetools.commons.api.impl" autoStart="true" startLevel="6" />
+      <property name="eclipse.ignoreApp" value="true" />
+      <property name="org.osgi.service.http.port" value="8080" />
+      <property name="osgi.bundles.defaultStartLevel" value="4" />
+      <property name="osgi.console.enable.builtin" value="true" />
+      <property name="osgi.noShutdown" value="true" />
+   </configurations>
+
+</product>

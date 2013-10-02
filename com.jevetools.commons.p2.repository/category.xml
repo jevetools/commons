@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.jevetools.commons.api.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.api.feature" version="0.0.0">
+      <category name="com.jevetools.commons"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.api.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.api.tests.feature" version="0.0.0">
+      <category name="com.jevetools.commons.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.api.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.impl.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.api.impl.feature" version="0.0.0">
+      <category name="com.jevetools.commons"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.impl.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.api.impl.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.impl.tests.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.api.impl.tests.feature" version="0.0.0">
+      <category name="com.jevetools.commons.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.api.impl.tests.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.api.impl.tests.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.test.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.test.feature" version="0.0.0">
+      <category name="com.jevetools.commons.tests"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.test.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.test.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.tests.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.logging.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.logging.feature" version="0.0.0">
+      <category name="com.jevetools.commons"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.logging.feature.source_0.0.1.qualifier.jar" id="com.jevetools.commons.logging.feature.source" version="0.0.0">
+      <category name="com.jevetools.commons.source"/>
+   </feature>
+   <feature url="features/com.jevetools.commons.product.feature_0.0.1.qualifier.jar" id="com.jevetools.commons.product.feature" version="0.0.0">
+      <category name="com.jevetools.commons"/>
+   </feature>
+   <category-def name="com.jevetools.commons" label="jEVETools Commons">
+      <description>
+         jEVETools Commons - JAVA EVE Online Tools Commons
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.commons.source" label="jEVETools Commons Sources">
+      <description>
+         jEVETools  Commons Sources - JAVA EVE Online Tools  Commons Sources
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.commons.tests" label="jEVETools Commons Tests">
+      <description>
+         jEVETools  Commons Tests - JAVA EVE Online Tools  Commons Tests
+      </description>
+   </category-def>
+   <category-def name="com.jevetools.commons.tests.source" label="jEVETools Commons Tests Sources">
+      <description>
+         jEVETools  Commons Tests Sources - JAVA EVE Online Tools Commons Tests Sources
+      </description>
+   </category-def>
+</site>

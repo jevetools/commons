@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.0.1.qualifier
+Bundle-SymbolicName: com.jevetools.commons.test;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.osgi.framework;version="1.7.0",
+ org.osgi.framework.namespace;version="1.0.0",
+ org.osgi.framework.wiring;version="1.1.0",
+ org.osgi.resource;version="1.0.0"
+Require-Bundle: org.apache.ant;bundle-version="1.8.4";visibility:=reexport,
+ org.junit;bundle-version="4.11.0";visibility:=reexport
+Export-Package: com.jevetools.commons.test;version="0.0.1"

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/component.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.0.1.qualifier
+Bundle-SymbolicName: com.jevetools.commons.api.impl;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: com.jevetools.commons.api;version="0.0.1",
+ com.jevetools.commons.api.service;version="0.0.1",
+ org.osgi.framework;version="1.7.0",
+ org.osgi.service.cm;version="1.4.0",
+ org.osgi.service.log;version="1.3.0"
+Bundle-Activator: com.jevetools.commons.api.impl.internal.Activator

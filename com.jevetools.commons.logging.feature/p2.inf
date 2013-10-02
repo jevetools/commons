@@ -1,0 +1,18 @@
+#create a requirement on the fragment we are creating
+requires.0.namespace=org.eclipse.equinox.p2.iu
+requires.0.name=configure.com.jevetools.commons.logging
+requires.0.range=[$version$,$version$]
+requires.0.greedy=true
+
+#create a IU fragment named configure.com.jevetools.commons.logging
+units.0.id=configure.com.jevetools.commons.logging
+units.0.version=$version$
+units.0.provides.1.namespace=org.eclipse.equinox.p2.iu
+units.0.provides.1.name=configure.com.jevetools.commons.logging
+units.0.provides.1.version=$version$
+units.0.instructions.install=org.eclipse.equinox.p2.touchpoint.eclipse.installBundle(bundle:${artifact});
+units.0.instructions.uninstall=org.eclipse.equinox.p2.touchpoint.eclipse.uninstallBundle(bundle:${artifact});
+units.0.instructions.unconfigure=org.eclipse.equinox.p2.touchpoint.eclipse.setStartLevel(startLevel:-1); \
+                                 org.eclipse.equinox.p2.touchpoint.eclipse.markStarted(started:false);
+units.0.instructions.configure=org.eclipse.equinox.p2.touchpoint.eclipse.setStartLevel(startLevel:2); \
+                               org.eclipse.equinox.p2.touchpoint.eclipse.markStarted(started:true);
