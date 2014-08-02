@@ -50,10 +50,8 @@ Primary targeted to be used in an JAVA OSGi environment.</description>
 		<project.source.version>1.7</project.source.version>
 		<project.target.version>1.7</project.target.version>
 		<execution.environment>JavaSE-1.7</execution.environment>
-		<tycho.version>0.18.1</tycho.version>
-		<tycho.target.platform>kepler</tycho.target.platform>
+		<tycho.version>0.21.0</tycho.version>
 		<tycho.scmUrl>scm:git:git://github.com/jevetools/commons.git</tycho.scmUrl>
-		<eclipse.version>4.3</eclipse.version>
 		<execution.environment>JavaSE-1.7</execution.environment>
 		<maven.resources.version>2.6</maven.resources.version>
 		<maven.checkstyle.version>2.10</maven.checkstyle.version>
@@ -193,7 +191,7 @@ Primary targeted to be used in an JAVA OSGi environment.</description>
 						<target>
 							<artifact>
 								<groupId>${project.groupId}</groupId>
-								<artifactId>${project.groupId}.target</artifactId>
+								<artifactId>${project.groupId}.commons.target</artifactId>
 								<version>${project.version}</version>
 							</artifact>
 						</target>
