@@ -245,6 +245,10 @@ public class AbstractTest
   protected final void checkImports(final Bundle bundle, //NOPMD
       final List<PackageImport> packages) throws InvalidSyntaxException
   {
+
+    packages.add(new PackageImport("org.osgi.framework", new VersionRange(
+        VersionRange.LEFT_CLOSED, new Version(1, 7, 0), null,
+        VersionRange.RIGHT_OPEN)));	  
     packages.add(new PackageImport("org.osgi.framework.namespace",
         new VersionRange(VersionRange.LEFT_CLOSED, new Version(1, 0, 0), null,
             VersionRange.RIGHT_OPEN)));
