@@ -109,7 +109,7 @@
       <property name="eclipse.ignoreApp" value="true" />
       <property name="org.osgi.service.http.port" value="8080" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
-      <property name="osgi.console.enable.builtin" value="true" />
+      <property name="osgi.console.enable.builtin" value="false" />
       <property name="osgi.noShutdown" value="true" />
    </configurations>
 
