@@ -44,6 +44,8 @@
       <plugin id="javax.xml" autoStart="true" startLevel="4" />
       <plugin id="org.apache.commons.codec" autoStart="false" startLevel="4" />
       <plugin id="org.apache.commons.logging" autoStart="false" startLevel="4" />
+      <plugin id="org.apache.felix.gogo.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.apache.felix.gogo.shell" autoStart="true" startLevel="4" />
       <plugin id="org.apache.httpcomponents.httpclient" autoStart="false" startLevel="4" />
       <plugin id="org.apache.httpcomponents.httpcore" autoStart="false" startLevel="4" />
       <plugin id="org.eclipse.core.jobs" autoStart="false" startLevel="4" />
